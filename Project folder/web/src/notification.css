@@ -1,0 +1,51 @@
+/* src/components/Notification.css */
+.notification {
+  position: relative;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification.info {
+  background-color: #d9edf7;
+  color: #31708f;
+}
+
+.notification.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.notification.warning {
+  background-color: #fcf8e3;
+  color: #8a6d3b;
+}
+
+.notification.error {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+.notification-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: inherit;
+  padding: 0 8px;
+}
+
+.close-btn:hover {
+  color: #000;
+}

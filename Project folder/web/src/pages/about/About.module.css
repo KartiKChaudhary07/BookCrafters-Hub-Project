@@ -1,0 +1,154 @@
+/* About.module.css */
+
+.container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Hero Section */
+  .heroSection {
+    background: linear-gradient(135deg, #f06, #4a90e2);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .heroTitle {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.5rem;
+  }
+  
+  /* Info Section */
+  .infoSection {
+    margin: 40px 0;
+    padding: 40px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideInFromLeft 1.5s ease-in-out;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .sectionText {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  /* Features Section */
+  .featuresSection {
+    margin: 40px 0;
+  }
+  
+  .featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .featureCard {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .featureCard:hover {
+    transform: translateY(-10px);
+  }
+  
+  .featureTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .featureText {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Mission Section */
+  .missionSection {
+    margin: 40px 0;
+    padding: 40px;
+    background-color: #fff5e6;
+    border-radius: 10px;
+    animation: slideInFromRight 1.5s ease-in-out;
+  }
+  
+  /* Contact Section */
+  .contactSection {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .contactSection a {
+    color: #f06;
+    text-decoration: none;
+  }
+  
+  .contactSection a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .heroTitle {
+      font-size: 2.5rem;
+    }
+  
+    .heroSubtitle {
+      font-size: 1.2rem;
+    }
+  
+    .sectionTitle {
+      font-size: 1.8rem;
+    }
+  
+    .sectionText {
+      font-size: 1rem;
+    }
+  }
+  

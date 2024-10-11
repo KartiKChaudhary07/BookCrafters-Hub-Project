@@ -1,0 +1,101 @@
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background: linear-gradient(90deg, #000000, #2a2a2a);
+  border-bottom: px solid #fdd835; /* Yellow border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
+  transition: background 0.5s ease;
+  height: 100px;
+
+}
+.mylogo{
+  height: 80px;
+}
+
+/* Logo Styling */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fdd835; /* Yellow logo text */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Gill Sans', 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  animation: logo-fade 2s ease-in-out infinite alternate; /* Logo animation */
+}
+
+@keyframes logo-fade {
+  0% { color: #fdd835; }
+  100% { color: #ffffff; }
+}
+
+/* Span inside Logo */
+.navbar .logo span {
+  background-color: #fdd835;
+  color: #000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-left: 1rem;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Nav Links */
+.navbar .nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navbar .nav-links li {
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #fdd835;
+  transition: color 0.4s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #000000; /* White on hover */
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect for Links */
+.navbar .nav-links > li:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 6px 15px rgba(255, 235, 59, 0.3); /* Yellow glow on hover */
+  border-radius: 50px;
+  padding: 10px;
+  
+  background-color: rgb(255, 251, 221); /* Light yellow background */
+}
+
+/* Avatar Styling */
+.navbar .avatar {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #fdd835; /* Yellow border around avatar */
+  transition: transform 0.3s ease;
+}
+
+.navbar .avatar:hover {
+  transform: rotate(360deg); /* 360-degree rotation on hover */
+  transition: transform 0.6s ease-in-out;
+}

@@ -1,0 +1,110 @@
+/* landingPage.css */
+
+.landingPage {
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.landingPage .heroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 2rem 1rem;
+
+  /** Background linear nice pattern for hero content, with green pattern */
+
+  background: linear-gradient(135deg, #6effd3 25%, transparent 25%) 0,
+    linear-gradient(225deg, #44c49d 25%, transparent 25%) 0,
+    linear-gradient(315deg, #119bf0 25%, transparent 25%),
+    linear-gradient(45deg, #027676 25%, transparent 25%);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.landingPage .heroContent h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.landingPage .heroContent p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.landingPage .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.landingPage .services .serviceCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.landingPage .about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.landingPage .about h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.landingPage .about p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 600px;
+}
+
+.landingPage footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.landingPage .socialLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.landingPage .socialLinks a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5rem;
+  color: #ffffff;
+  font-size: 1rem;
+}

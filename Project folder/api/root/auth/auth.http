@@ -1,0 +1,22 @@
+@hostUrl = http://localhost:5000
+
+
+POST  {{hostUrl}}/api/register
+Content-Type: application/json
+
+{
+    "fullName":"Sivaraj S",
+    "email":"s1@gmail.com",
+    "password":"p1"
+}
+
+
+###
+
+POST  {{hostUrl}}/api/login
+Content-Type: application/json
+
+{
+    "email":"s1@gmail.com",
+    "password":"p1"
+}
